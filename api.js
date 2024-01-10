@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
 
 app.get('/api/v1/dstwindow', (req, res) => {
     const message = getDstWindowMessage(req.query.year);
+    console.log('Someone is using your api! ;)');
     res.send(message)
 })
 
