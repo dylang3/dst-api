@@ -22,6 +22,7 @@ app.get('/api/v1/isDst', (req, res) => {
     const month = parseInt(req.query.month);
     const year = req.query.year;
     const message = isDst(day, month, year);
+    console.log('Someone is using your api! ;)');
     res.send(message);
 })
 
